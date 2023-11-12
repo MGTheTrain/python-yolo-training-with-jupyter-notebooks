@@ -27,4 +27,4 @@ Repository demonstrating how to train a custom CNN model based on yolo-v4-tiny a
 
 2. Upload the [data-custom folder](data-custom) to [Google Drive](https://www.google.com/intl/de/drive/).
 
-3. Open [custom-yolov4-tiny-training.ipynb in Colab](https://colab.research.google.com/github/MGTheTrain/python-yolo-training-with-jupyter-notebooks/blob/main/notebooks/custom-yolov4-tiny-training.ipynb) in Colab and run each code block
+3. Open [custom-yolov4-tiny-training.ipynb in Colab](https://colab.research.google.com/github/MGTheTrain/python-yolo-training-with-jupyter-notebooks/blob/main/notebooks/custom-yolov4-tiny-training.ipynb) and run each code block
