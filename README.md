@@ -47,7 +47,7 @@ cp data-custom/yolov4-tiny-custom.cfg file python-object-detection-with-yolo-and
 cp data-custom/obj.names file python-object-detection-with-yolo-and-opencv/object-names
 ```
 
-Update the code in [the git submodules object_detector_app.py](https://github.com/MGTheTrain/python-object-detection-with-yolo-and-opencv/tree/main/object_detector_app.py) assign the `yolov4-tiny-custom_best.weights`, `yolov4-tiny-custom.cfg` and `data-custom/obj.names` as values to the associated variables, e.g.
+Update the code in [the git submodules object_detector_app.py](https://github.com/MGTheTrain/python-object-detection-with-yolo-and-opencv/tree/main/object_detector_app.py) to assign the `yolov4-tiny-custom_best.weights`, `yolov4-tiny-custom.cfg` and `data-custom/obj.names` as values to the associated variables, e.g.
 
 ```python
 ...
