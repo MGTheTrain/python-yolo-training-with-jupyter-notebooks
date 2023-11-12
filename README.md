@@ -14,8 +14,9 @@ Repository demonstrating how to train a custom CNN model based on yolo-v4-tiny a
 
 ## References
 
-- [Github repository - yolov4-tiny-custom_Training](https://github.com/techzizou/yolov4-tiny-custom_Training/tree/main)
-- [Medium post - Train a custom yolov4 tiny object detector using google colab](https://medium.com/analytics-vidhya/train-a-custom-yolov4-tiny-object-detector-using-google-colab-b58be08c9593)
+- [Github repository of Techzizou - yolov4-tiny-custom_Training](https://github.com/techzizou/yolov4-tiny-custom_Training/tree/main)
+- [Medium post by Techzizou - Train a custom yolov4 tiny object detector using google colab](https://medium.com/analytics-vidhya/train-a-custom-yolov4-tiny-object-detector-using-google-colab-b58be08c9593)
+- [Jupyter notebook of Techzizou](https://colab.research.google.com/drive/1hQO4nOoD6RDxdbz3C1YSiifTsyZjZpYm?usp=sharing#scrollTo=afZcMjuiLEUi)
 - [darknet](https://github.com/AlexeyAB/darknet)
 
 ## How to use
