@@ -1,0 +1,6 @@
+classes= 2
+train  = data-custom/train.txt
+valid  = data-custom/train.txt
+names = data-custom/obj.names
+backup = backup/
+
