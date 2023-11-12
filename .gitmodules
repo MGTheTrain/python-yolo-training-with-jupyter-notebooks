@@ -1,0 +1,3 @@
+[submodule "python-object-detection-with-yolo-and-opencv"]
+	path = python-object-detection-with-yolo-and-opencv
+	url = git@github.com:MGTheTrain/python-object-detection-with-yolo-and-opencv.git

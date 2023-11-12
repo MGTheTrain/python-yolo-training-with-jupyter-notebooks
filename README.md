@@ -35,3 +35,7 @@ Upload the [data-custom folder](data-custom) to [Google Drive](https://www.googl
 
 ### Setp 3 - Running code blocks of the custom Jupyter notebook in Google Colab
 Open [custom-yolov4-tiny-training.ipynb in Colab](https://colab.research.google.com/github/MGTheTrain/python-yolo-training-with-jupyter-notebooks/blob/main/notebooks/custom-yolov4-tiny-training.ipynb) and run each code block
+
+### Step 4 - Utilize your trained weights in the sample object detector app
+
+Run `git submodule init --update`. Navigate trough the steps [in python-object-detection-with-yolo-and-opencv](./python-object-detection-with-yolo-and-opencv/) in order to launch the object detector app.
