@@ -38,4 +38,31 @@ Open [custom-yolov4-tiny-training.ipynb in Colab](https://colab.research.google.
 
 ### Step 4 - Utilize your trained weights in the sample object detector app
 
-Run `git submodule init --update`. Navigate trough the steps [in python-object-detection-with-yolo-and-opencv](./python-object-detection-with-yolo-and-opencv/) in order to launch the object detector app.
+Execute the following steps in order to initialize the git submodule object detector app:
+
+```sh
+git submodule init --update
+cp <your download folder path>/yolov4-tiny-custom_best.weights python-object-detection-with-yolo-and-opencv/weights
+cp data-custom/yolov4-tiny-custom.cfg file python-object-detection-with-yolo-and-opencv/cfg
+cp data-custom/obj.names file python-object-detection-with-yolo-and-opencv/object-names
+```
+
+Update the code in [object_detector_app.py](./python-object-detection-with-yolo-and-opencv/object_detector_app.py) to refer to the `yolov4-tiny-custom_best.weights`, `yolov4-tiny-custom.cfg` and `data-custom/obj.names`, e.g.
+
+```python
+...
+object_names = "object-names/obj.names"
+classes = []
+with open(object_names, "r") as f:
+    classes = f.read().strip().split("\n")
+
+weights_file = "weights/yolov4-tiny-custom_best.weights"
+cfg_file = "cfg/yolov4-tiny-custom.cfg"
+net = cv2.dnn.readNet(weights_file, cfg_file)
+layer_names = net.getLayerNames()
+
+output_layers = ["yolo_30", "yolo_37"]  # yolov4-tiny
+...
+```
+
+Navigate trough the steps [in python-object-detection-with-yolo-and-opencv](./python-object-detection-with-yolo-and-opencv/) in order to launch the object detector app.
