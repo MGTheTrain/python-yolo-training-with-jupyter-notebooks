@@ -42,9 +42,14 @@ Execute the following steps in order to initialize the git submodule object dete
 
 ```sh
 git submodule init --update
+# On Unix terminals
 cp <your download folder path>/yolov4-tiny-custom_best.weights python-object-detection-with-yolo-and-opencv/weights
-cp data-custom/yolov4-tiny-custom.cfg file python-object-detection-with-yolo-and-opencv/cfg
-cp data-custom/obj.names file python-object-detection-with-yolo-and-opencv/object-names
+cp data-custom/yolov4-tiny-custom.cfg python-object-detection-with-yolo-and-opencv/cfg
+cp data-custom/obj.names python-object-detection-with-yolo-and-opencv/object-names
+# On Powershell (Windows OS)
+Copy-Item "<your download folder path>\yolov4-tiny-custom_best.weights" -Destination "python-object-detection-with-yolo-and-opencv\weights"
+Copy-Item "data-custom\yolov4-tiny-custom.cfg" -Destination "python-object-detection-with-yolo-and-opencv\cfg"
+Copy-Item "data-custom\obj.names" -Destination "python-object-detection-with-yolo-and-opencv\object-names"
 ```
 
 Update the code in [the git submodules object_detector_app.py](https://github.com/MGTheTrain/python-object-detection-with-yolo-and-opencv/tree/main/object_detector_app.py) to assign the `yolov4-tiny-custom_best.weights`, `yolov4-tiny-custom.cfg` and `data-custom/obj.names` as values to the associated variables, e.g.
