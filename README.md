@@ -65,4 +65,4 @@ output_layers = ["yolo_30", "yolo_37"]  # yolov4-tiny
 ...
 ```
 
-In [python-object-detection-with-yolo-and-opencv](https://github.com/MGTheTrain/python-object-detection-with-yolo-and-opencv/tree/main/) install the requirements if not yet done and launch the object detector app via `python object_detector_app.py`.
+In [python-object-detection-with-yolo-and-opencv](https://github.com/MGTheTrain/python-object-detection-with-yolo-and-opencv/tree/main/) install the pip package requirements if not yet done and launch the object detector app via `python object_detector_app.py`.
