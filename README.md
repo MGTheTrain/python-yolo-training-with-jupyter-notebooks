@@ -47,7 +47,7 @@ cp data-custom/yolov4-tiny-custom.cfg file python-object-detection-with-yolo-and
 cp data-custom/obj.names file python-object-detection-with-yolo-and-opencv/object-names
 ```
 
-Update the code in [object_detector_app.py](./python-object-detection-with-yolo-and-opencv/object_detector_app.py) to refer to the `yolov4-tiny-custom_best.weights`, `yolov4-tiny-custom.cfg` and `data-custom/obj.names`, e.g.
+Update the code in [object_detector_app.py](https://github.com/MGTheTrain/python-object-detection-with-yolo-and-opencv/tree/main/object_detector_app.py) to refer to the `yolov4-tiny-custom_best.weights`, `yolov4-tiny-custom.cfg` and `data-custom/obj.names`, e.g.
 
 ```python
 ...
@@ -65,4 +65,4 @@ output_layers = ["yolo_30", "yolo_37"]  # yolov4-tiny
 ...
 ```
 
-Navigate trough the steps [in python-object-detection-with-yolo-and-opencv](./python-object-detection-with-yolo-and-opencv/) in order to launch the object detector app.
+Navigate trough the steps [in python-object-detection-with-yolo-and-opencv](https://github.com/MGTheTrain/python-object-detection-with-yolo-and-opencv/tree/main/) in order to launch the object detector app.
