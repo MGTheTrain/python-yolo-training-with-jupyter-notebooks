@@ -52,22 +52,18 @@ Copy-Item "data-custom\yolov4-tiny-custom.cfg" -Destination "python-object-detec
 Copy-Item "data-custom\obj.names" -Destination "python-object-detection-with-yolo-and-opencv\object-names"
 ```
 
-Update the code in [the git submodules object_detector_app.py](https://github.com/MGTheTrain/python-object-detection-with-yolo-and-opencv/tree/main/object_detector_app.py) to assign the `yolov4-tiny-custom_best.weights`, `yolov4-tiny-custom.cfg` and `data-custom/obj.names` as values to the associated variables, e.g.
+Update the code in [the git submodules object_detector_app.py](https://github.com/MGTheTrain/python-object-detection-with-yolo-and-opencv/tree/main/object_detector_app.py) to consider the `yolov4-tiny-custom_best.weights`, `yolov4-tiny-custom.cfg` and `data-custom/obj.names` as values to the associated variables, e.g.
 
 ```python
 ...
-object_names = "object-names/obj.names"
-classes = []
-with open(object_names, "r") as f:
-    classes = f.read().strip().split("\n")
-
-weights_file = "weights/yolov4-tiny-custom_best.weights"
-cfg_file = "cfg/yolov4-tiny-custom.cfg"
-net = cv2.dnn.readNet(weights_file, cfg_file)
-layer_names = net.getLayerNames()
-
-output_layers = ["yolo_30", "yolo_37"]  # yolov4-tiny
+elif model_version == "custom-yolov4-tiny":
+   weights_file = "weights/yolov4-tiny-custom_best.weights"
+   cfg_file = "cfg/yolov4-tiny-custom.cfg"
+   output_layers = ["yolo_30", "yolo_37"]
+...
+parser.add_argument('--model', choices=['yolov3', 'yolov4', 'yolov3-tiny', 'yolov4-tiny', 'custom-yolov4-tiny'],
+                    default='yolov4-tiny', help='Select YOLO model version')
 ...
 ```
 
-In [python-object-detection-with-yolo-and-opencv](https://github.com/MGTheTrain/python-object-detection-with-yolo-and-opencv/tree/main/) install the pip package requirements if not yet done and launch the object detector app via `python object_detector_app.py`.
+In [python-object-detection-with-yolo-and-opencv](https://github.com/MGTheTrain/python-object-detection-with-yolo-and-opencv/tree/main/) install the pip package requirements if not yet done and launch the object detector app via `python object_detector_app.py --model custom-yolov4-tiny`.
