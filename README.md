@@ -41,12 +41,24 @@ Upload the [data-custom folder](data-custom) to [Google Drive](https://www.googl
 ### Running code blocks of the custom Jupyter notebook in Google Colab
 Open [custom-yolov4-tiny-training.ipynb in Colab](https://colab.research.google.com/github/MGTheTrain/python-yolo-training-with-jupyter-notebooks/blob/main/notebooks/custom-yolov4-tiny-training.ipynb) and run each code block
 
-### Utilize your trained weights in the sample object detector app
 
-Execute the following steps in order to initialize the git submodule containing [the object detector app](https://github.com/MGTheTrain/python-object-detection-with-yolo-and-opencv/tree/main/object_detector_app.py) and copy custom `.weights`, `.cfg` and `.names` files to appropriate destination pathes:
+### Init and update git submodules
+
+Execute the following steps in order to initialize the git submodule containing [the object detector app](https://github.com/MGTheTrain/python-object-detection-with-yolo-and-opencv/tree/main/object_detector_app.py):
 
 ```sh
+# On Unix terminals
 git submodule init --update
+# or on Windows OS
+git submodule init
+git submodule update
+```
+
+### Utilize your trained weights in the sample object detector app
+
+Copy custom `.weights`, `.cfg` and `.names` files to appropriate destination pathes:
+
+```sh
 # On Unix terminals
 cp <your download folder path>/yolov4-tiny-custom_best.weights python-object-detection-with-yolo-and-opencv/weights
 cp data-custom/yolov4-tiny-custom.cfg python-object-detection-with-yolo-and-opencv/cfg
