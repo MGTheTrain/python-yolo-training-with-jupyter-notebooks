@@ -52,7 +52,23 @@ Copy-Item "data-custom\yolov4-tiny-custom.cfg" -Destination "python-object-detec
 Copy-Item "data-custom\obj.names" -Destination "python-object-detection-with-yolo-and-opencv\object-names"
 ```
 
+<<<<<<< HEAD
 Utilize the python cli tool in [the git submodules object_detector_app.py](https://github.com/MGTheTrain/python-object-detection-with-yolo-and-opencv/tree/main/object_detector_app.py) and execute `python object_detector_app.py --model yolov4-tiny`.
 
+=======
+Update the code in [the git submodules object_detector_app.py](https://github.com/MGTheTrain/python-object-detection-with-yolo-and-opencv/tree/main/object_detector_app.py) to consider the `yolov4-tiny-custom_best.weights`, `yolov4-tiny-custom.cfg` and `data-custom/obj.names` as values to the associated variables, e.g.
 
-In [python-object-detection-with-yolo-and-opencv](https://github.com/MGTheTrain/python-object-detection-with-yolo-and-opencv/tree/main/) install the pip package requirements if not yet done and launch the object detector app via `python object_detector_app.py`.
+```python
+...
+elif model_version == "custom-yolov4-tiny":
+   weights_file = "weights/yolov4-tiny-custom_best.weights"
+   cfg_file = "cfg/yolov4-tiny-custom.cfg"
+   output_layers = ["yolo_30", "yolo_37"]
+...
+parser.add_argument('--model', choices=['yolov3', 'yolov4', 'yolov3-tiny', 'yolov4-tiny', 'custom-yolov4-tiny'],
+                    default='yolov4-tiny', help='Select YOLO model version')
+...
+```
+>>>>>>> 42af282373c4ab4affc877853f16fbec7bbbd6b3
+
+In [python-object-detection-with-yolo-and-opencv](https://github.com/MGTheTrain/python-object-detection-with-yolo-and-opencv/tree/main/) install the pip package requirements if not yet done and launch the object detector app via `python object_detector_app.py --model custom-yolov4-tiny`.
