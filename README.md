@@ -6,7 +6,7 @@
 + [References](#references)
 + [How to use](#how-to-use)
   + [Labeling images](#labeling-images)
-  + [Updating the yolov4-tiny-custom.cfg file](#updating-the-yolov4-tiny-custom.cfg-file)
+  + [Updating the yolov4-tiny-custom.cfg file](#updating-the-yolov4-tiny-customcfg-file)
   + [Uploading the custom-data folder to Google Drive](#uploading-the-custom-data-folder-to-google-drive)
   + [Running code blocks of the custom Jupyter notebook in Google Colab](#running-code-blocks-of-the-custom-jupyter-notebook-in-google-colab)
   + [Utilize your trained weights in the sample object detector app](#utilize-your-trained-weights-in-the-sample-object-detector-app)
