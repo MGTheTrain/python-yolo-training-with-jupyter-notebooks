@@ -38,7 +38,7 @@ Open [custom-yolov4-tiny-training.ipynb in Colab](https://colab.research.google.
 
 ### Step 4 - Utilize your trained weights in the sample object detector app
 
-Execute the following steps in order to initialize the git submodule object detector app and copy custom `.weights`, `.cfg` and `.names` files to appropriate destination pathes:
+Execute the following steps in order to initialize the git submodule containing [the object detector app](https://github.com/MGTheTrain/python-object-detection-with-yolo-and-opencv/tree/main/object_detector_app.py) and copy custom `.weights`, `.cfg` and `.names` files to appropriate destination pathes:
 
 ```sh
 git submodule init --update
@@ -52,7 +52,7 @@ Copy-Item "data-custom\yolov4-tiny-custom.cfg" -Destination "python-object-detec
 Copy-Item "data-custom\obj.names" -Destination "python-object-detection-with-yolo-and-opencv\object-names"
 ```
 
-Utilize [the git submodules object_detector_app.py](https://github.com/MGTheTrain/python-object-detection-with-yolo-and-opencv/tree/main/object_detector_app.py) and execute `python object_detector_app.py --model yolov4-tiny`.
+Utilize the git submodules [object_detector_app.py](https://github.com/MGTheTrain/python-object-detection-with-yolo-and-opencv/tree/main/object_detector_app.py) and execute `python object_detector_app.py --model yolov4-tiny`.
 
 
 In [python-object-detection-with-yolo-and-opencv](https://github.com/MGTheTrain/python-object-detection-with-yolo-and-opencv/tree/main/) install the pip package requirements if not yet done and launch the object detector app via `python object_detector_app.py --model custom-yolov4-tiny`.
