@@ -14,7 +14,7 @@
 
 ## Summary
 
-Repository demonstrating how to train a custom CNN model based on yolo-v4-tiny architecture. This can be utilized for image classification. image localization, image segmentation or object detection applications.
+Repository demonstrating how to train a custom CNN model based on yolo-v4-tiny architecture. This can be utilized for image classification, image localization or object detection applications.
 
 [![Open custom-yolov4-tiny-training.ipynb in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MGTheTrain/python-yolo-training-with-jupyter-notebooks/blob/main/notebooks/custom-yolov4-tiny-training.ipynb)
 
