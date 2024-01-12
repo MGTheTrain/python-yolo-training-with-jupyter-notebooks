@@ -36,7 +36,7 @@ Modify [train.txt](data-custom/train.txt) to encompass all JPG files for trainin
 Also update the [obj.names file](data-custom/obj.names) to list your classes.
 
 ### Updating the yolov4-tiny-custom.cfg file
- Adjust in the [yolov4-tiny-custom.cfg](data-custom/yolov4-tiny-custom.cfg) the `width`, `height`, `batch`, `subdivision`, `max_batches`, `steps`, `classes` and `filters` values. Refer to [section 3(a) Create and upload the labeled custom dataset “obj.zip” file to the “yolov4-tiny” folder on your drive here](https://medium.com/analytics-vidhya/train-a-custom-yolov4-tiny-object-detector-using-google-colab-b58be08c9593) or copy the original file which can be found here [yolov4-tiny-custom.cfg](https://github.com/AlexeyAB/darknet/blob/master/cfg/yolov4-tiny-custom.cfg) and replace [this yolov4-tiny-custom.cfg](data-custom/yolov4-tiny-custom.cfg).
+ Adjust in the [yolov4-tiny-custom.cfg](data-custom/yolov4-tiny-custom.cfg) the `width`, `height`, `batch`, `subdivision`, `max_batches`, `steps`, `classes` and `filters` hyperparameter values. Refer to [section 3(a) Create and upload the labeled custom dataset “obj.zip” file to the “yolov4-tiny” folder on your drive here](https://medium.com/analytics-vidhya/train-a-custom-yolov4-tiny-object-detector-using-google-colab-b58be08c9593) or copy the original file which can be found here [yolov4-tiny-custom.cfg](https://github.com/AlexeyAB/darknet/blob/master/cfg/yolov4-tiny-custom.cfg) and replace [this yolov4-tiny-custom.cfg](data-custom/yolov4-tiny-custom.cfg).
 
 ### Uploading the custom-data folder to Google Drive
 Upload the [data-custom folder](data-custom) to [Google Drive](https://www.google.com/intl/de/drive/).
